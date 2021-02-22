@@ -1,3 +1,7 @@
+####  Shre Swaminarayano Vijayate!!! 
+# This is we scrapper utility special designed for BAPS IMS.
+# This scrapper can be used as reference but need work replacing all information.
+# End goal for the utility to provide all karyakar infromation in excel format with massaging all data and providing proper links.
 from requests import Session
 from bs4 import BeautifulSoup as bs
 
@@ -24,4 +28,4 @@ with Session() as session:
         for eachColumn in eachRow.find_all('td'):
             print(eachColumn.text, end='')
         print()
-
+    session.get(url + loginPage)
